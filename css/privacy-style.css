@@ -1,0 +1,128 @@
+body {
+    display: grid;
+    grid-template-rows: 90px auto 80px;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Century Gothic', 'Calibri Light', sans-serif;
+    background: #eee;
+    overflow-x: hidden;
+}
+
+main {
+    display: grid;
+    grid-gap: 1vw;
+    padding: 5vh 5vw 5vw 5vw;
+}
+
+a:link { color: #121212; text-decoration: none; }
+a:visited { color: #121212; text-decoration: none; }
+a:hover { color: #888; }
+a:focus { color: #bbb; }
+a:active { color: #bbb; }
+
+nav {
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.topnav li {
+    float: left;
+}
+
+.hamburger {
+    display: none;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 715px) {
+    .topnav li:not(.hamburger) {
+        display: none;
+    }
+    .hamburger {
+        float: left;
+        display: block;
+    }
+    .topnav, footer ul {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 0;
+    }
+    .topnav.responsive {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    nav {
+        height: fit-content;
+    }
+    .topnav.responsive li {
+        display: block;
+    }
+    .topnav.responsive a {
+        width: 100%;
+    }
+    body {
+        grid-template-rows: auto auto 80px;
+    }
+    main {
+        padding-top: 1vh;
+    }
+    .topnav.responsive .navigation-right {
+        margin-left: 0px;
+        margin-right: auto;
+    }
+}
+
+nav ul, footer ul {
+    display: flex;
+    margin: 16px 0px;
+    list-style-type: none;
+}
+
+nav ul { flex-wrap: wrap; }
+
+nav li, footer li {
+    margin: 20px 40px 0 10px;
+}
+
+li { max-width: 750px; }
+
+.navigation-right {
+    margin-left: auto;
+    margin-right: 5vw;
+}
+
+h1 { font-size: 250%; }
+
+p { max-width: 90vw; }
+
+footer {
+    background: black;
+    margin: auto -0.5em -3em -0.5em;
+    padding: 1.75em;
+}
+
+a.footer-option:link { color: #fff; text-decoration: none; }
+a.footer-option:visited { color: #fff; text-decoration: none; }
+a.footer-option:hover { color: #fff; }
+a.footer-option:focus { color: #bbb; }
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 200%;
+    }
+    p, footer ul {
+        font-size: 13px;
+        line-height: 25px;
+        margin: 16px 3vw;
+        padding-left: 0;
+        justify-content: space-between;
+    }
+    footer li {
+        padding: 2px;
+        margin: 0 10vw;
+    }
+    .topnav {
+        margin-left: 0px;
+    }
+}
