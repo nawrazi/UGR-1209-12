@@ -35,11 +35,11 @@
         <section class="flex-item mid-section">
             <form action="">
                 <label for="name" class="field-label required-field">Name:</label>
-                <input type="text" class="field name-field" name="name" required>
+                <input type="text" class="field name-field" id="name" name="name" required>
 
                 <br /> <br />
-                <label for="prefix" class="field-label not-required-field">Prefix:</label>
-                <select name="prefixes" class="field prefixes-field">
+                <label for="prefixes" class="field-label not-required-field">Prefix:</label>
+                <select name="prefixes" class="field prefixes-field" id="prefixes">
                     <option value="none"></option>
                     <option value="mr">Mr.</option>
                     <option value="ms">Ms.</option>
@@ -50,7 +50,7 @@
                 <br /> <br />
                 <label for="message" class="field-label required-field">Message:</label>
                 <br /> <br />
-                <textarea name="message" class="field message-field" required></textarea>
+                <textarea name="message" class="field message-field id="message"" required></textarea>
 
                 <br /><br />
                 <div class="buttons-div">
