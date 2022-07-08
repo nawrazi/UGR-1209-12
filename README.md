@@ -1,3 +1,1 @@
-# Personal Portfolio
-
-Assignment submission for Web-Development course.
+This is an assignment on responsive web design. It is not my real portfolio.
